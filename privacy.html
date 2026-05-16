@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Warden</title>
+    <link rel="icon" type="image/png" href="/assets/ic_launcher-playstore.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css?v=3" />
+  </head>
+  <body>
+    <header class="nav nav--privacy">
+      <a href="/" class="nav__brand" aria-label="Warden home">
+        <span class="nav__mark">
+          <img src="/assets/logo_without_bg.png" alt="" width="22" height="22" />
+        </span>
+        <span class="nav__name">Warden</span>
+      </a>
+      <a class="privacy-back" href="/">← Back to home</a>
+    </header>
+
+    <main class="privacy-page">
+      <div class="container">
+        <span class="pill pill--navy">Privacy policy</span>
+        <h1>What Warden knows about you: <span class="highlight-box">almost nothing.</span></h1>
+        <p>
+          Warden (<span class="code-tag">com.ag.warden</span>) is an Android focus app built on the
+          principle of <em>friction as a feature</em>. Your lock schedules, whitelist, registered
+          morning object, and usage patterns stay on your device.
+        </p>
+        <p class="privacy-meta">Last updated: May 16, 2026</p>
+
+        <div class="privacy-body">
+          <section class="privacy-section">
+            <h2>1. Information We Collect and How We Use It</h2>
+            <p>
+              Warden requires specific permissions to function as a "high-friction" app blocker.
+              Here is how we handle that data:
+            </p>
+
+            <h3>A. Camera and Image Data</h3>
+            <ul>
+              <li>
+                <strong>Purpose:</strong> Used solely for the "Morning Routine" object scanning
+                feature.
+              </li>
+              <li>
+                <strong>Privacy Protection:</strong> Warden uses Google ML Kit for image labeling.
+                All image processing is performed locally on your device. Warden does not upload,
+                store, or share your photos or camera feed to any external servers.
+              </li>
+            </ul>
+
+            <h3>B. Usage Data (Foreground App Detection)</h3>
+            <ul>
+              <li>
+                <strong>Purpose:</strong> To determine if a "Locked" app is currently being used so
+                the WardenLock overlay can be displayed.
+              </li>
+              <li>
+                <strong>Data Handling:</strong> We monitor the package name of the app currently in
+                the foreground. This data is processed in real-time by the WardenService and is not
+                logged or transmitted.
+              </li>
+            </ul>
+
+            <h3>C. Device and Debug Information</h3>
+            <ul>
+              <li>
+                <strong>Purpose:</strong> To provide technical support when you contact us.
+              </li>
+              <li>
+                <strong>Source:</strong> When you use the "Talk with us" or "Feedback" features,
+                the App generates a pre-filled email containing your Device Model, Android
+                Version, and App Version.
+              </li>
+              <li>
+                <strong>Control:</strong> This information is only sent if you manually choose to
+                send the email.
+              </li>
+            </ul>
+
+            <h3>D. Local Storage (SharedPreferences)</h3>
+            <ul>
+              <li>
+                <strong>Purpose:</strong> To save your settings (e.g., wake times, routine duration)
+                and current lock state.
+              </li>
+              <li>
+                <strong>Data Handling:</strong> This data is stored locally on your device in a
+                file named WardenPrefs. It is not synced to a cloud unless you use a system-level
+                Android backup.
+              </li>
+            </ul>
+          </section>
+
+          <section class="privacy-section">
+            <h2>2. Permissions Required</h2>
+            <p>To provide its core functionality, Warden requires:</p>
+            <ul>
+              <li>
+                <strong>Display Over Other Apps:</strong> To show the WardenLock screen.
+              </li>
+              <li>
+                <strong>Usage Access:</strong> To detect when an addictive app is opened.
+              </li>
+              <li><strong>Camera:</strong> To scan your morning routine object.</li>
+              <li>
+                <strong>Notifications:</strong> To maintain the Foreground Service and ensure the
+                app isn't killed by the system.
+              </li>
+            </ul>
+          </section>
+
+          <section class="privacy-section">
+            <h2>3. Third-Party Services</h2>
+            <p>We may use the following third-party providers:</p>
+            <ul>
+              <li><strong>Google ML Kit:</strong> For on-device object recognition.</li>
+              <li><strong>Google Play Services:</strong> For app updates and basic analytics.</li>
+              <li><strong>Firebase:</strong> For optional crash reporting and cloud messaging.</li>
+            </ul>
+            <p>
+              These services may collect information used to identify you. We encourage you to
+              review the
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
+                >Google Privacy Policy</a
+              >.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>4. Data Retention</h2>
+            <ul>
+              <li>
+                <strong>Local Data:</strong> Settings and routine data remain on your device until
+                you clear the app data or uninstall the App.
+              </li>
+              <li>
+                <strong>Support Communication:</strong> If you email us for support, we retain
+                that correspondence to assist you with future requests.
+              </li>
+            </ul>
+          </section>
+
+          <section class="privacy-section">
+            <h2>5. Children's Privacy</h2>
+            <p>
+              Warden does not knowingly collect personal identifiable information from children
+              under 13. If you are a parent and discover your child has provided us with personal
+              data, please contact us so we can delete it.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>6. Your Rights</h2>
+            <p>
+              Depending on your location (e.g., GDPR in the EU), you may have the right to access,
+              correct, or delete your data. Since most Warden data is stored locally, you can
+              exercise these rights by clearing the App's storage in your Android system settings.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>7. Changes to This Policy</h2>
+            <p>
+              We may update our Privacy Policy from time to time. We will notify you of any changes
+              by posting the new Privacy Policy on this page and updating the version name within
+              the App.
+            </p>
+          </section>
+
+          <section class="privacy-section">
+            <h2>8. Contact Us</h2>
+            <p>
+              If you have any questions or suggestions about our Privacy Policy, do not hesitate to
+              contact us through the "Talk with us" section in the App drawer or at:
+              <a href="mailto:gupteaarya09+warden@gmail.com">gupteaarya09+warden@gmail.com</a>
+            </p>
+            <p class="privacy-effective"><strong>Effective Date:</strong> May 16, 2026</p>
+          </section>
+        </div>
+
+        <div class="tldr-card">
+          <h2>TL;DR</h2>
+          <ul>
+            <li>We do <strong>not</strong> sell your data to any service.</li>
+            <li>
+              Camera frames for morning scans are processed <strong>on your device</strong> with
+              <strong>on-device ML Kit</strong> — not uploaded to our servers.
+            </li>
+            <li>App usage detection uses Android Usage Stats, read locally to trigger WardenLock.</li>
+            <li>SharedPreferences on-device store your settings and lock state.</li>
+            <li>No account required. No cloud sync of your blocking history.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

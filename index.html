@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Warden — Android focus app built on friction as a feature. WardenLock overlay, morning object scans, and high-friction emergency mode." />
+  <title>Warden — Stop scrolling. Start living.</title>
+  <link rel="icon" type="image/png" href="/assets/ic_launcher-playstore.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css?v=4" />
+</head>
+
+<body>
+  <header class="nav">
+    <a href="#" class="nav__brand" aria-label="Warden home">
+      <span class="nav__mark">
+        <img src="/assets/logo_without_bg.png" alt="" width="22" height="22" />
+      </span>
+      <span class="nav__name">Warden</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--navy btn--sm btn--brutal nav__cta" href="#download">Join Beta</a>
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="nav-drawer" class="nav-drawer" hidden>
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#support">Support</a>
+    <a class="btn btn--navy btn--brutal btn--block" href="https://discord.gg/eW3CFQbnK" target="_blank"
+      rel="noopener noreferrer">Join Beta on Discord</a>
+    <a class="btn btn--outline btn--brutal btn--block" href="#download">More about the beta</a>
+  </div>
+  <button type="button" class="nav-backdrop" hidden aria-label="Close menu"></button>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__grid container">
+        <div class="hero__copy reveal">
+          <span class="pill pill--yellow">
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM7 4V3h10v1H7zm0 14V6h10v12H7z" />
+            </svg>
+            Android · Developer beta open
+          </span>
+          <h1 class="hero__headline">
+            Stop scrolling.<br />
+            Start <span class="highlight-marker">living.</span>
+          </h1>
+          <p class="hero__lead">
+            Warden is the Android focus app built on a single, stubborn idea:
+            <strong>friction is a feature</strong>. Make addictive apps physically annoying to
+            open — until you stop reaching for them.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--yellow btn--brutal" href="https://play.google.com/store/apps/details?id=com.ag.warden"
+              target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
+              </svg>
+              Get on Google Play
+            </a>
+            <a class="btn btn--outline btn--brutal btn--brutal-navy" href="https://discord.gg/eW3CFQbnK" target="_blank"
+              rel="noopener noreferrer">Join the Beta Group</a>
+          </div>
+          <div class="hero__trust">
+            <span class="stars" aria-label="5 stars">★★★★★</span>
+            <span>Loved by early testers</span>
+            <span class="hero__trust-divider">·</span>
+            <span>Android</span>
+            <span class="hero__trust-divider">·</span>
+            <span>Free</span>
+            <span class="hero__trust-divider">·</span>
+            <span>No ads</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--d1">
+          <div class="hero-card brutal-shadow-yellow">
+            <span class="hero-card__status">LOCKED · 7h 32m</span>
+            <img class="hero-card__mascot" src="/assets/warden_hello_onboarding_page1.png" alt="Warden mascot"
+              width="280" height="320" />
+            <span class="hero-card__unlock">
+              <span class="icon-coffee" aria-hidden="true">☕</span>
+              Scan to unlock
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="philosophy" id="philosophy">
+      <div class="container philosophy__grid reveal">
+        <div class="philosophy__left">
+          <span class="pill pill--navy">The philosophy</span>
+          <h2 class="philosophy__headline">
+            Friction is <span class="highlight-box">a feature</span>, not a bug.
+          </h2>
+        </div>
+        <div class="philosophy__right">
+          <p>
+            Willpower is a finite resource. Every other blocker asks you to resist temptation in
+            the moment you are weakest. Warden doesn't ask — it makes misbehaving
+            <strong>physically annoying</strong>.
+          </p>
+          <p>
+            A system-level overlay you cannot swipe away. A morning scan that forces you out of
+            bed. A 30-second kill-switch on every emergency unlock. The friction <em>is</em> the
+            product.
+          </p>
+          <div class="stat-row">
+            <article class="stat-card stat-card--yellow brutal-shadow-sm">
+              <span class="stat-card__icon">◎</span>
+              <p class="stat-card__value">~4h</p>
+              <p class="stat-card__label">avg daily screen time recovered</p>
+            </article>
+            <article class="stat-card brutal-shadow-sm">
+              <span class="stat-card__icon stat-card__icon--orange">⚡</span>
+              <p class="stat-card__value">0</p>
+              <p class="stat-card__label">willpower required</p>
+            </article>
+            <article class="stat-card brutal-shadow-sm">
+              <span class="stat-card__icon stat-card__icon--orange">↘</span>
+              <p class="stat-card__value">-72%</p>
+              <p class="stat-card__label">pickups before noon (beta data)</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill pill--outline">Core features</span>
+          <h2>Three layers of unbreakable focus.</h2>
+          <p>
+            Designed to be impossible to outsmart in a moment of weakness — and easy to live with
+            the rest of the time.
+          </p>
+        </header>
+
+        <div class="features__top reveal">
+          <article class="feature-card feature-card--lock">
+            <div class="feature-card__head">
+              <span class="feature-icon feature-icon--lock">🔒</span>
+              <span class="feature-card__tag">The WardenLock</span>
+            </div>
+            <h3>A system-level overlay that <em>cannot</em> be swiped away.</h3>
+            <p>
+              Open Instagram, TikTok, X — and Warden draws itself <em>over</em> the screen. The app
+              is technically running, but it is unusable. The foreground service is sticky: kill
+              it from recents, and Android brings it right back.
+            </p>
+            <div class="mock-phones">
+              <div class="mock-phone mock-phone--blocked">
+                <div class="mock-phone__bar">11:47 · Instagram</div>
+                <div class="mock-phone__body"></div>
+                <div class="mock-phone__footer mock-phone__footer--blocked">
+                  <span>🔒</span> BLOCKED
+                </div>
+              </div>
+              <div class="mock-phone mock-phone--allow">
+                <div class="mock-phone__bar">11:47 · Whitelist</div>
+                <ul class="mock-phone__apps">
+                  <li>📞 Phone</li>
+                  <li>💬 Messages</li>
+                  <li>📷 Camera</li>
+                </ul>
+                <div class="mock-phone__footer mock-phone__footer--allow">ALLOWED</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card--emergency brutal-shadow">
+            <div class="feature-card__head">
+              <span class="feature-icon feature-icon--warn">⚠</span>
+            </div>
+            <h3>Emergency Mode</h3>
+            <p>
+              Genuine emergency? Tap the break-glass. Then watch a 30-second countdown. Then get a
+              strict 5-minute window before Warden locks you back in.
+            </p>
+            <div class="emergency-widget" id="emergency-widget">
+              <p class="emergency-widget__label">HOLD ON</p>
+              <p class="emergency-widget__time" id="emergency-time">00:30</p>
+              <div class="emergency-widget__bar">
+                <span id="emergency-bar"></span>
+              </div>
+              <button type="button" class="emergency-widget__btn" id="emergency-btn" disabled>
+                Confirm (locked)
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <article class="feature-card feature-card--morning brutal-shadow reveal">
+          <div class="feature-card__morning-copy">
+            <span class="feature-icon feature-icon--cam">📷</span>
+            <h3>The Morning Routine. Get out of bed. Prove it.</h3>
+            <p>
+              Register a real-world object — coffee machine, gym shoe, toothbrush. Each morning,
+              scan it with on-device ML Kit recognition. No tap-to-unlock. No negotiating with
+              your alarm.
+            </p>
+            <div class="object-pills">
+              <button type="button" class="object-pill is-active" data-object="coffee">
+                ☕ Coffee maker
+              </button>
+              <button type="button" class="object-pill" data-object="shoe">👟 Running shoe</button>
+              <button type="button" class="object-pill" data-object="brush">🪥 Toothbrush</button>
+              <button type="button" class="object-pill" data-object="journal">📓 Journal</button>
+            </div>
+          </div>
+          <div class="scan-previews">
+            <figure class="scan-preview">
+              <div class="scan-preview__frame">
+                <span class="scan-object-icon" aria-hidden="true">☕</span>
+              </div>
+              <figcaption class="scan-preview__tag scan-preview__tag--scan" id="scan-tag">
+                SCANNING: COFFEE MAKER · 92%
+              </figcaption>
+            </figure>
+            <figure class="scan-preview">
+              <div class="scan-preview__frame scan-preview__frame--unlocked">
+                <div class="scan-preview__placeholder">🏋️</div>
+              </div>
+              <figcaption class="scan-preview__tag scan-preview__tag--ok">UNLOCKED ✓</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how" id="how-it-works">
+      <div class="container how__grid reveal">
+        <div class="how__left">
+          <span class="pill pill--yellow">How it works</span>
+          <h2>Four steps to a phone that <span class="text-blue">works for you.</span></h2>
+          <div class="mascot-card brutal-shadow">
+            <img src="/assets/warden_thumbs_up.png" alt="Warden mascot with key and lock" width="220" />
+          </div>
+        </div>
+        <ol class="steps">
+          <li class="step-card brutal-shadow-sm">
+            <span class="step-card__num">01</span>
+            <div>
+              <h4>Pick your battles</h4>
+              <p>
+                Whitelist the apps you actually need — Phone, Maps, Messages. Everything else
+                goes behind the Warden.
+              </p>
+            </div>
+          </li>
+          <li class="step-card brutal-shadow-sm">
+            <span class="step-card__num">02</span>
+            <div>
+              <h4>Register your object</h4>
+              <p>
+                Choose a physical anchor for your morning. Coffee machine, gym shoe, journal —
+                whatever forces you out of bed.
+              </p>
+            </div>
+          </li>
+          <li class="step-card brutal-shadow-sm">
+            <span class="step-card__num">03</span>
+            <div>
+              <h4>Lock it down</h4>
+              <p>
+                Set your lock window (e.g. 10pm → 8am). Warden's foreground service stays alive
+                even when you try to kill it.
+              </p>
+            </div>
+          </li>
+          <li class="step-card brutal-shadow-sm">
+            <span class="step-card__num">04</span>
+            <div>
+              <h4>Earn your phone back</h4>
+              <p>
+                Each morning, scan the object. No willpower fight. No "one more snooze." Just a
+                clear physical action.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill pill--outline">From the beta</span>
+          <h2>They stopped reaching.</h2>
+        </header>
+        <div class="testimonial-grid reveal">
+          <article class="testimonial brutal-shadow testimonial--featured">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote>
+              "I have tried every blocker. They all die the second I really crave Instagram.
+              Warden is the first one I literally cannot defeat at 11pm."
+            </blockquote>
+            <footer>
+              <span class="avatar">PR</span>
+              <div>
+                <strong>Priya R.</strong>
+                <span>Product Designer · Bengaluru</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial brutal-shadow">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote>
+              "Scanning my coffee machine to unlock the phone sounds dumb until you do it for a
+              week. I get out of bed faster than my alarm now."
+            </blockquote>
+            <footer>
+              <span class="avatar">MT</span>
+              <div>
+                <strong>Marcus T.</strong>
+                <span>Founder · Berlin</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial brutal-shadow testimonial--cream">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote>
+              "The 30-second confirm on Emergency Mode killed every impulsive unlock. By the time
+              it counts down, I do not want the app anymore."
+            </blockquote>
+            <footer>
+              <span class="avatar">SK</span>
+              <div>
+                <strong>Sana K.</strong>
+                <span>Med Student · Toronto</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial brutal-shadow">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote>
+              "My screen time dropped from 6h to 1h 40m in three weeks. The friction is the entire
+              point. I sleep better, I read again."
+            </blockquote>
+            <footer>
+              <span class="avatar">DO</span>
+              <div>
+                <strong>Daniel O.</strong>
+                <span>Engineer · Lagos</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill pill--yellow">Pricing</span>
+          <h2>Honest pricing. No dark patterns.</h2>
+          <p>The core friction is free forever. Pro is for people who want more control.</p>
+        </header>
+        <div class="pricing__grid reveal">
+          <article class="price-card brutal-shadow">
+            <p class="price-card__tier">Free</p>
+            <p class="price-card__amount">₹0 <span>/ forever</span></p>
+            <p class="price-card__desc">Everything you need to break the scroll loop.</p>
+            <ul class="price-card__list">
+              <li>WardenLock system overlay</li>
+              <li>Whitelist up to 5 apps</li>
+              <li>Morning Routine (1 object)</li>
+              <li>Emergency Mode</li>
+              <li>Android only</li>
+            </ul>
+            <a class="btn btn--yellow btn--brutal btn--block"
+              href="https://play.google.com/store/apps/details?id=com.ag.warden" target="_blank"
+              rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
+              </svg>
+              Get Warden Free
+            </a>
+          </article>
+          <article class="price-card price-card--pro">
+            <span class="price-card__soon">Coming soon</span>
+            <p class="price-card__tier">Pro</p>
+            <p class="price-card__amount price-card__amount--pro">₹199 <span>/ year</span></p>
+            <p class="price-card__desc">For people serious about reclaiming their attention.</p>
+            <ul class="price-card__list">
+              <li>Everything in Free</li>
+              <li>Unlimited whitelist apps</li>
+              <li>Multiple morning objects + rotation</li>
+              <li>Custom lock schedules</li>
+              <li>Weekly insight reports</li>
+              <li>Priority beta features</li>
+            </ul>
+            <a class="btn btn--white btn--brutal btn--block" href="#download">Join Beta for Early Access</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <span class="pill pill--navy">FAQ</span>
+          <h2>Questions, answered honestly.</h2>
+        </header>
+        <div class="accordion brutal-shadow reveal" id="faq-accordion">
+          <details class="accordion__item" open>
+            <summary>Is Warden available on iPhone?</summary>
+            <p>
+              Not yet. Warden relies on Android system overlays, usage stats, and foreground
+              services — APIs that don't exist on iOS in the same form. Android-first, always.
+            </p>
+          </details>
+          <details class="accordion__item">
+            <summary>What is the 'Friction as a Feature' philosophy?</summary>
+            <p>
+              Instead of asking you to resist temptation with willpower, Warden makes misbehaving
+              physically annoying — overlays, morning scans, and countdown timers — until the
+              habit loop breaks.
+            </p>
+          </details>
+          <details class="accordion__item">
+            <summary>Can I bypass Warden if I really need my phone?</summary>
+            <p>
+              Yes, via Emergency Mode — but you'll wait 30 seconds before confirming, then get
+              exactly 5 minutes in DORMANT state before re-locking automatically.
+            </p>
+          </details>
+          <details class="accordion__item">
+            <summary>How does morning object scanning work?</summary>
+            <p>
+              You register a real-world object (coffee machine, shoes, etc.). Each morning you
+              scan it with your camera; on-device ML Kit verifies the label. No cloud uploads.
+            </p>
+          </details>
+          <details class="accordion__item">
+            <summary>What if I just uninstall the app?</summary>
+            <p>
+              You can — Warden can't stop you from uninstalling. The goal is to add enough
+              friction that you don't reach for addictive apps in weak moments, not to trap you.
+            </p>
+          </details>
+          <details class="accordion__item">
+            <summary>How do I join the developer beta?</summary>
+            <p>
+              Scroll to the download section and join the Discord beta group for early builds,
+              bug reports, and feature votes — or grab the public build on Google Play.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="support" id="support">
+      <div class="container reveal">
+        <div class="support-card brutal-shadow">
+          <div class="support-card__icon-wrap">
+            <img src="/assets/buymeacoffee.png" alt="Buy Me a Coffee" width="72" height="72" />
+          </div>
+          <div class="support-card__copy">
+            <span class="pill pill--yellow">Support the project</span>
+            <h2>Help keep Warden free.</h2>
+            <p>
+              Warden is built and maintained independently. If it’s helping you reclaim your
+              mornings, a coffee goes a long way toward hosting, testing, and shipping the next
+              build.
+            </p>
+            <a class="btn btn--yellow btn--brutal" href="https://buymeacoffee.com/gupteaarya" target="_blank"
+              rel="noopener noreferrer">
+              <img src="/assets/buymeacoffee.png" alt="" width="20" height="20" class="btn__bmc-icon" />
+              Buy me a coffee
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="feedback" id="feedback">
+      <div class="container reveal">
+        <div class="feedback-card brutal-shadow">
+          <div class="feedback-card__icon-wrap">
+            <span class="feedback-icon" aria-hidden="true">💬</span>
+          </div>
+          <div class="feedback-card__copy">
+            <span class="pill pill--outline">User feedback</span>
+            <h2>Tell us what's working — and what's not.</h2>
+            <p>
+              Your brief, honest feedback helps make Warden the most effective productivity
+              barrier possible. The survey takes about 60 seconds.
+            </p>
+            <a class="btn btn--outline btn--brutal btn--brutal-navy"
+              href="https://docs.google.com/forms/d/1mtMzZdpJA3MyXz988SSXhhl_1iaFP-5V77rzPVkVPlQ/viewform"
+              target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 12h8v2H8v-2zm0 4h5v2H8v-2z" />
+              </svg>
+              Open feedback form
+            </a>
+          </div>
+          <div class="feedback-card__meta">
+            <p><strong>Warden User Experience Feedback</strong></p>
+            <p>Anonymous · No account required</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beta CTA -->
+    <section class="beta-cta" id="download">
+      <div class="container reveal">
+        <div class="beta-card brutal-shadow-beta">
+          <div class="beta-card__copy">
+            <span class="pill pill--yellow">Developer beta</span>
+            <h2>Join my Developer Beta Tester Group.</h2>
+            <p>
+              Get every build before the Play Store does. Chat directly with me, file bugs, vote
+              on features, and help shape an app that respects your attention.
+            </p>
+            <div class="beta-card__actions">
+              <a class="btn btn--yellow btn--brutal" href="https://discord.gg/eW3CFQbnK" target="_blank"
+                rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037 12.3 12.3 0 0 0-.608 1.25 18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                </svg>
+                Join the Discord
+              </a>
+              <a class="btn btn--white btn--brutal" href="https://play.google.com/store/apps/details?id=com.ag.warden"
+                target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
+                </svg>
+                Google Play (Android)
+              </a>
+            </div>
+          </div>
+          <img class="beta-card__mascot" src="/assets/warden_hello_onboarding_page1.png" alt="" width="200" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="nav__brand">
+          <span class="nav__mark nav__mark--light">
+            <img src="/assets/logo_without_bg.png" alt="" width="22" height="22" />
+          </span>
+          <span class="nav__name nav__name--light">Warden</span>
+        </a>
+        <p>
+          Warden is built on a single belief: the cure for an addictive phone is not more
+          willpower — it is friction. Android-first. Privacy-first. On-device only.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#support">Support</a>
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <div class="footer__social">
+          <a href="https://www.youtube.com/@refactorly" target="_blank" rel="noopener noreferrer"
+            aria-label="YouTube — Refactorly">YT</a>
+          <a href="https://github.com/gupteAarya" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub — gupteAarya">GH</a>
+          <a href="https://discord.gg/eW3CFQbnK" target="_blank" rel="noopener noreferrer"
+            aria-label="Discord — AG's Beta Tester Club">DC</a>
+          <a href="https://buymeacoffee.com/gupteaarya" target="_blank" rel="noopener noreferrer"
+            aria-label="Buy Me a Coffee" class="footer__social-bmc"><img src="/assets/buymeacoffee.png" alt=""
+              width="22" height="22" /></a>
+        </div>
+        <p class="footer__social-labels">
+          <a href="https://www.youtube.com/@refactorly" target="_blank" rel="noopener noreferrer">YouTube</a>
+          ·
+          <a href="https://github.com/gupteAarya" target="_blank" rel="noopener noreferrer">GitHub</a>
+          ·
+          <a href="https://discord.gg/eW3CFQbnK" target="_blank" rel="noopener noreferrer">Discord Beta</a>
+          ·
+          <a href="https://buymeacoffee.com/gupteaarya" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a>
+        </p>
+        <p class="footer__tagline">Made with stubborn focus.</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Warden · com.ag.warden</p>
+      <p>
+        <a href="/privacy.html">Privacy</a> · Android · Free · No data leaves your phone
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
