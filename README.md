@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Warden Logo](/assets/logo_without_bg.png)
+![Warden Logo](public/assets/logo_with_text.png)
 
 **The Android focus app built on friction as a feature.**
 
@@ -37,7 +37,7 @@ Warden is an Android focus app that makes addictive apps **physically annoying**
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="/assets/warden_hello_onboarding_page1.png" alt="Warden Mascot" width="300">
+  <img src="public/assets/warden_hello_onboarding_page1.png" alt="Warden Mascot" width="300">
 </div>
 
 ---
@@ -63,7 +63,7 @@ This landing page is built with:
 
 ## 🌐 Live Demo
 
-Check out the landing page: [warden-landing-page](https://github.com/gupteAarya/warden-landing-page)
+Check out the landing page: [Open](https://wardenlanding.vercel.app/)
 
 ---
 
@@ -99,7 +99,7 @@ Have thoughts? Help improve Warden by sharing your experience:
 
 ## 🔗 Links
 
-- **Website:** [Warden Landing Page](https://github.com/gupteAarya/warden-landing-page)
+- **Website:** [Warden Landing Page](https://wardenlanding.vercel.app/)
 - **Discord Beta:** [Join the Beta Group](https://discord.gg/eW3CFQbnK)
 - **Privacy Policy:** [View Privacy Policy](/privacy.html)
 - **Support:** [Buy Me a Coffee](https://buymeacoffee.com/gupteaarya)
